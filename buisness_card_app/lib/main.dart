@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(BuisnessCardApp());
+  runApp(const BuisnessCardApp());
 }
 
 class BuisnessCardApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class BuisnessCardApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
-        body: Column(
+        body: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
@@ -48,9 +48,6 @@ class BuisnessCardApp extends StatelessWidget {
               height: 10,
             ),
             Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: ListTile(
                 leading: Icon(
@@ -65,9 +62,6 @@ class BuisnessCardApp extends StatelessWidget {
               ),
             ),
             Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: ListTile(
                 leading: Icon(

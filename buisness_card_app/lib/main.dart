@@ -15,12 +15,13 @@ class BuisnessCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 122,
+              radius: 112,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                radius: 120,
+                radius: 110,
                 backgroundImage: AssetImage('images/tharwat.png'),
               ),
             ),
@@ -39,6 +40,13 @@ class BuisnessCardApp extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),
+            Divider(
+              color: Color(0xFF6C8090),
+              thickness: 1,
+              indent: 40,
+              endIndent: 40,
+              height: 10git status,
+            ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Container(
@@ -50,22 +58,19 @@ class BuisnessCardApp extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(left: 24),
+                      padding: EdgeInsets.only(left: 16),
                       child: Icon(
                         Icons.phone,
                         size: 32,
                         color: Color(0xFF2B475E),
                       ),
                     ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      '+20 0117635342',
-                      style: TextStyle(fontSize: 24),
-                    ),
-                    Spacer(
-                      flex: 2,
+                    Padding(
+                      padding: EdgeInsets.only(left: 24),
+                      child: Text(
+                        '+20 0117635342',
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
                   ],
                 ),
@@ -82,22 +87,19 @@ class BuisnessCardApp extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(left: 24),
+                      padding: EdgeInsets.only(left: 16),
                       child: Icon(
                         Icons.mail,
                         size: 32,
                         color: Color(0xFF2B475E),
                       ),
                     ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      'info@email.com',
-                      style: TextStyle(fontSize: 24),
-                    ),
-                    Spacer(
-                      flex: 2,
+                    Padding(
+                      padding: EdgeInsets.only(left: 24),
+                      child: Text(
+                        'info@email.com',
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
                   ],
                 ),

@@ -47,64 +47,99 @@ class BuisnessCardApp extends StatelessWidget {
               endIndent: 40,
               height: 10,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 32,
+                  color: Color(0xFF2B475E),
                 ),
-                height: 65,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 16),
-                      child: Icon(
-                        Icons.phone,
-                        size: 32,
-                        color: Color(0xFF2B475E),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 24),
-                      child: Text(
-                        '+20 0117635342',
-                        style: TextStyle(fontSize: 24),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  '+20 0117635342',
+                  style: TextStyle(fontSize: 24),
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(
+                  Icons.mail,
+                  size: 32,
+                  color: Color(0xFF2B475E),
                 ),
-                height: 65,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 16),
-                      child: Icon(
-                        Icons.mail,
-                        size: 32,
-                        color: Color(0xFF2B475E),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 24),
-                      child: Text(
-                        'info@email.com',
-                        style: TextStyle(fontSize: 24),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  'info@email.com',
+                  style: TextStyle(fontSize: 24),
                 ),
               ),
             ),
+            // using ListTile widget is better than doing a container
+            // Padding(
+            //   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       borderRadius: BorderRadius.circular(10),
+            //       color: Colors.white,
+            //     ),
+            //     height: 65,
+            //     child: Row(
+            //       children: [
+            //         Padding(
+            //           padding: EdgeInsets.only(left: 16),
+            //           child: Icon(
+            //             Icons.phone,
+            //             size: 32,
+            //             color: Color(0xFF2B475E),
+            //           ),
+            //         ),
+            //         Padding(
+            //           padding: EdgeInsets.only(left: 24),
+            //           child: Text(
+            //             '+20 0117635342',
+            //             style: TextStyle(fontSize: 24),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       borderRadius: BorderRadius.circular(10),
+            //       color: Colors.white,
+            //     ),
+            //     height: 65,
+            //     child: Row(
+            //       children: [
+            //         Padding(
+            //           padding: EdgeInsets.only(left: 16),
+            //           child: Icon(
+            //             Icons.mail,
+            //             size: 32,
+            //             color: Color(0xFF2B475E),
+            //           ),
+            //         ),
+            //         Padding(
+            //           padding: EdgeInsets.only(left: 24),
+            // child: Text(
+            //   'info@email.com',
+            //   style: TextStyle(fontSize: 24),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

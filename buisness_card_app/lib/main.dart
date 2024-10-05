@@ -45,7 +45,7 @@ class BuisnessCardApp extends StatelessWidget {
               thickness: 1,
               indent: 40,
               endIndent: 40,
-              height: 10git status,
+              height: 10,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
